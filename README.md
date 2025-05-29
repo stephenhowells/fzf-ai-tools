@@ -1,10 +1,15 @@
-# fzf-ai-tools
+<div align="center">
+  <img src="https://raw.githubusercontent.com/stephenhowells/fzf-ai-tools/refs/heads/images/fzf-ai-tools.svg" alt="fzf-ai-tools" width="60%">
+</div>
+
+<br>
+<br>
 
 > _Smart Z shell super-powers for fzf._
 
 `fzf-ai-tools` glues together [`fzf`](https://github.com/junegunn/fzf) and [`aichat`](https://github.com/sigoden/aichat) to add _explain-this-for-me_ goodness to your Z shell. Pipe your history, aliases, or any file through fuzzy-finder search and ask an LLM for a quick human-readable explanation.
 
-## Features
+## ✨ Features
 
 - **`ai:h`** — History: Fuzzy-search your shell history and have AI explain the chosen command.
 - **`ai:a`** — Aliases: Browse your defined aliases and let AI decode what that cryptic one-liner does.
@@ -12,7 +17,7 @@
 - **`ai:i`** — Input: Type arbitrary input and ask AI about it (bound to <kbd>Ctrl-A</kbd> by default).
 - Dependency check that politely yells at you if `fzf` or `aichat` are missing.
 
-## Installation
+## 🚀 Installation
 
 ### 1. Install the runtime dependencies
 
@@ -35,7 +40,7 @@ antidote bundle stephenhowells/fzf-ai-tools
 </details>
 
 <details>
-<summary>Oh-My-Zsh</summary>
+<summary>Oh My Zsh</summary>
 
 Clone into `~/.oh-my-zsh/custom/plugins` and add `fzf-ai-tools` to the `plugins=(...)` array in `.zshrc`.
 
@@ -64,18 +69,18 @@ Clone the repo anywhere (for example `~/.zsh/fzf-ai-tools`) and source the plugi
 git clone https://github.com/stephenhowells/fzf-ai-tools ~/.zsh/fzf-ai-tools
 
 # Add to your .zshrc
-source ~/.zsh/fzf-ai-tools/fzf-ai.plugin.zsh
+source ~/.zsh/fzf-ai-tools/fzf-ai-tools.plugin.zsh
 ```
 
 </details>
 
-### 3. Reload ZSH
+### 3. Reload Zsh
 
 ```zsh
 exec zsh
 ```
 
-## Usage
+## 📖 Usage
 
 | Alias  | Long-form        | What it does                                                                                       |
 | ------ | ---------------- | -------------------------------------------------------------------------------------------------- |
@@ -90,16 +95,25 @@ exec zsh
 | ----------------- | --------------------------------------------------- |
 | <kbd>Ctrl-A</kbd> | Trigger `fzf-ai-input` from anywhere in the prompt. |
 
-## Customization
+## ⚙️ Customization
 
 ```zsh
-# Change the keybinding to Ctrl-E
+# Change the keybinding to Ctrl-E for the fzf-ai-input command
+
 bindkey '^E' fzf-ai-input
 ```
 
-## Troubleshooting
+## 🤔 Troubleshooting
 
 | Symptom        | Likely Cause                         | Fix                                                            |
 | -------------- | ------------------------------------ | -------------------------------------------------------------- |
 | Blank previews | `aichat` lacks API key / network.    | Configure `AICHAT_OPENAI_KEY` or whatever AI provider you use. |
 | Slowness       | Some LLM responses can take a while. | Try switching to a different AI model in `aichat`.             |
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+MIT License - see [LICENSE](LICENSE) file for details.
