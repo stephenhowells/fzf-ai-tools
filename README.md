@@ -9,6 +9,12 @@
 
 `fzf-ai-tools` glues together [`fzf`](https://github.com/junegunn/fzf) and [`aichat`](https://github.com/sigoden/aichat) to add _explain-this-for-me_ goodness to your Z shell. Pipe your history, aliases, or any file through fuzzy-finder search and ask an LLM for a quick human-readable explanation.
 
+## 🎥 Demo
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/stephenhowells/fzf-ai-tools/refs/heads/images/demo.gif" alt="fzf-ai-tools" width="100%">
+</div>
+
 ## ✨ Features
 
 - **`ai:h`** — History: Fuzzy-search your shell history and have AI explain the chosen command.
