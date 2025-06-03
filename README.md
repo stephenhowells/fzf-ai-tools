@@ -1,8 +1,7 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/stephenhowells/fzf-ai-tools/refs/heads/images/fzf-ai-tools.svg" alt="fzf-ai-tools" width="60%">
+  <img src="https://raw.githubusercontent.com/stephenhowells/fzf-ai-tools/refs/heads/images/fzf-ai-tools.png" alt="fzf-ai-tools" width="100%">
 </div>
 
-<br>
 <br>
 
 > _Smart Z shell super-powers for fzf._
@@ -28,8 +27,9 @@
 ### 1. Install the runtime dependencies
 
 ```bash
-brew install fzf        # or your package manager of choice
-brew install aichat     # https://github.com/sigoden/aichat
+# Use Homebrew or your package manager of choice
+
+brew install fzf aichat
 ```
 
 The `aichat` tool requires an API key for an LLM. Consult the [aichat repository](https://github.com/sigoden/aichat) for more information.
