@@ -19,7 +19,7 @@
 - **`ai:h`** — History: Fuzzy-search your shell history and have AI explain the chosen command.
 - **`ai:a`** — Aliases: Browse your defined aliases and let AI decode what that cryptic one-liner does.
 - **`ai:f`** — Files: Fuzzy-find project files and get a top-of-file interpretation.
-- **`ai:i`** — Input: Type arbitrary input and ask AI about it (bound to <kbd>Ctrl-A</kbd> by default).
+- **`ai:i`** — Input: Type arbitrary input and ask AI about it (bound to <kbd>Alt-G</kbd> by default).
 - Dependency check that politely yells at you if `fzf` or `aichat` are missing.
 
 ## 🚀 Installation
@@ -99,14 +99,14 @@ exec zsh
 
 | Key               | Action                                              |
 | ----------------- | --------------------------------------------------- |
-| <kbd>Ctrl-A</kbd> | Trigger `fzf-ai-input` from anywhere in the prompt. |
+| <kbd>Alt-G</kbd> | Trigger `fzf-ai-input` from anywhere in the prompt. |
 
 ## ⚙️ Customization
 
 ```zsh
-# Change the keybinding to Ctrl-E for the fzf-ai-input command
+# Add a new keybinding for the fzf-ai-input command in your .zshrc file, Ctrl-E in this example
 
-bindkey '^E' fzf-ai-input
+bindkey '^E' fzf-ai-input-widget
 ```
 
 ## 🤔 Troubleshooting
