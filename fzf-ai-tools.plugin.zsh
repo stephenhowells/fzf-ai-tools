@@ -163,14 +163,7 @@ alias ai:i='fzf-ai-input'
 
 _fzf_ai_input_widget() {
   zle -I
-  local saved_buffer="$BUFFER"
-  local saved_cursor="$CURSOR"
-
   fzf-ai-input
-
-  BUFFER="$saved_buffer"
-  CURSOR="$saved_cursor"
-  zle redisplay
 }
 
 zle -N fzf-ai-input-widget _fzf_ai_input_widget
